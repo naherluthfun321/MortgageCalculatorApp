@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Mortgage Calculator App</string>
+    <string name="purchase_price">Purchase Price</string>
+    <string name="Down_Payment">Down Payment</string>
+</resources>

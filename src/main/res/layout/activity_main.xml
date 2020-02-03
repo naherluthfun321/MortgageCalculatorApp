@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.luthfun.naher.mortgagecalculatorapp.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:showIn="@layout/activity_main"
+        tools:context=".MainActivityFragment"
+        android:orientation="vertical"
+        android:id="@+id/quizLinearLayout"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row1LinearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/purchase_price"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:padding="@dimen/textview_padding"     />
+
+        <EditText
+        android:id="@+id/etPurchasePrice"
+        android:layout_width="178dp"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/row2LinearLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Down_Payment"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:padding="@dimen/textview_padding"/>
+
+
+        <EditText
+            android:id="@+id/etDownPayment"
+            android:layout_width="178dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+      </LinearLayout>
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/seekbar_height"
+            android:id="@+id/percentSeekBar"
+            android:indeterminate="false"
+            android:max="30"
+            android:progress="15"
+            android:layout_gravity="fill_horizontal"/>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
